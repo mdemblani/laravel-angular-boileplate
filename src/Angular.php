@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Console\Commands\Angular;
+namespace Angular\Commands;
 
 use FilesystemIterator;
 use Illuminate\Filesystem\Filesystem;
