@@ -3,7 +3,6 @@
     "description": "Provides a brief list of commands to get started with AngularJS 1.6.X with laravel in ES6 style.",
     "require": {
         "laravel/framework": "5.5.*",
-        "laravel/laravel": "^5.5"
     },
     "authors": [
         {
@@ -12,30 +11,14 @@
         }
     ],
     "autoload": {
-		"classmap": [
-		
-		],
-		"psr-4": {
-			"App\\": "app/"
-		}
-	},
-	"autoload-dev": {
-		"psr-4": {
-			"Tests\\": "tests/"
-		}
-	},
-	"extra": {
-		"laravel": {
-			"dont-discover": [
-			]
-		}
-	},
+	"psr-4": {
+		"App\\": "app/"
+	}
+    },
+
 	"scripts": {
 		"post-root-package-install": [
 			"@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-		],
-		"post-create-project-cmd": [
-			"@php artisan key:generate"
 		],
 		"post-autoload-dump": [
 			"Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
@@ -47,5 +30,4 @@
 		"sort-packages": true,
 		"optimize-autoloader": true
 	}
-
 }
