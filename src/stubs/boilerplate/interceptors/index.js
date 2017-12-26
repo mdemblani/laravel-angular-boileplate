@@ -30,6 +30,10 @@ let dependencies = [
 
 ];
 
+/**
+ * The name of the module is exported, since Angular depends on the name of the module while resolving
+ * module dependenies.
+ */
 export default angular
 		.module('DUMMYAPPNAME.interceptors', dependencies)
 		.config(interceptor)

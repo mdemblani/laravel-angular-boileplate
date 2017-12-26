@@ -1,7 +1,7 @@
 import isFunction from './is-function';
 
 /**
- * @name inheritor
+ * @function inheritor
  * @kind function
  *
  * Provides a generic wrapper to set inheritance between objects

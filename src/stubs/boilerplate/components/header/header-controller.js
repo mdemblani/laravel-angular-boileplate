@@ -1,20 +1,20 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME.home
- * @function homeController
+ * @module DUMMYAPPNAME.header
+ * @function headerController
  * @kind controller
- * @name homeController
+ * @name headerController
  *
- * The homeController is used by the homeComponent. You can use this component to set-up various elements of
- * header.
+ * The headerController is used by the headerComponent. You can use this component
+ * to set-up various elements of header.
  */
 function headerController() {
 	'ngInject';
 
 	/**
 	 * The view-model variable. Anything bound to this variable is exposed to the view.
-	 * @type appController
+	 * @type headerController
 	 */
 	let vm = this;
 	vm.name = null;

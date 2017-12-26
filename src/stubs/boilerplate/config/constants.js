@@ -1,11 +1,12 @@
 /**
  * @module DUMMYAPPNAME
- * @type constants
- * 
+ * @type {angular.Module#constant}
+ * @name appConstants
+ * @kind constant
+ *
  * The constants file. All your constants that you would require across the entire application
  * would be present over here.
- */
-const constants = {
+ */const constants = {
 	key: 'value'
 };
 

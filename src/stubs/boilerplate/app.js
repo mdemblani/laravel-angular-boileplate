@@ -1,5 +1,6 @@
 /**
  * @module DUMMYAPPNAME
+ * @kind module
  *
  * This is the main entry point into the application. The entire angular application begins
  * execution from this point.

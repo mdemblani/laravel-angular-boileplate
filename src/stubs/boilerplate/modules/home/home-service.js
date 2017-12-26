@@ -14,13 +14,22 @@ function homeService() {
 	'ngInject';
 
 	/**
-	 * All the functions to be exposed to the view, or the life-cycle functions are added over here.
+	 * All the functions of the service to be exposed are added over here.
 	 */
 	angular.extend(this, {
-		exposedService
+		exposedFunction
 	});
 
-	function exposedService() {
+	/**
+	 * All the functions of the service to be exposed on $rootScope are added over here.
+	 * @example:
+	 * angular.extend($rootScope, {
+	 *	exposedFunction
+	 * });
+	 */
+
+
+	function exposedFunction() {
 
 	}
 

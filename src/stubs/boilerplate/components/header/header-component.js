@@ -1,5 +1,5 @@
 /**
- * @module DUMMYAPPNAME.home
+ * @module DUMMYAPPNAME.header
  * @kind component
  * @name homeComponent
  *

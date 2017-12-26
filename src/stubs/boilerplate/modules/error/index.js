@@ -26,5 +26,5 @@ let dependencies = [
  * module dependenies.
  */
 export default angular.module('DUMMYAPPNAME.error', dependencies)
-		.component('errorNotFound', errorComponent)
+		.component('errorNotFound', errorNotFoundComponent)
 		.name;

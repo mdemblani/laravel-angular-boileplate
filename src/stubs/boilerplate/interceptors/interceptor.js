@@ -21,6 +21,11 @@
 
 import authorizationInterceptor from './authorization-interceptor';
 
+/**
+ * The interceptors contain all the interceptors which are to be added to the $httpProvider.
+ *
+ * @type Array
+ */
 let interceptors = [
 	authorizationInterceptor,
 ];
@@ -28,6 +33,9 @@ let interceptors = [
 function interceptor($httpProvider) {
 	'ngInject';
 
+	/*
+	 * Add the list of Interceptors to the $httpProvider
+	 */
 	$httpProvider.interceptors.push(...interceptors);
 }
 

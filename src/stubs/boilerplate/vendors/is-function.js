@@ -1,5 +1,5 @@
 /**
- * @name isFunction
+ * @function isFunction
  * @kind function
  *
  * Determines if a reference is a `Function`.
