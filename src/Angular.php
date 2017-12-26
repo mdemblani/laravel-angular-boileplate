@@ -361,11 +361,11 @@ class Angular {
 		}
 
 		$variables = PHP_EOL
-			. static::ENV_PREFIX . 'APP_NAME=' . $this->name
+			. static::ENV_PREFIX . 'APP_NAME="' . $this->name . '"'
 			. PHP_EOL
-			. static::ENV_PREFIX . 'SCRIPT_PATH=' . $this->getScriptPath()
+			. static::ENV_PREFIX . 'SCRIPT_PATH="' . $this->getScriptPath() . '"'
 			. PHP_EOL
-			. static::ENV_PREFIX . 'PARTIAL_PATH=' . $this->getPartialPath();
+			. static::ENV_PREFIX . 'PARTIAL_PATH="' . $this->getPartialPath() . '"';
 		$this->filesystem->append('.env', $variables);
 	}
 
