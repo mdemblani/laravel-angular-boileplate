@@ -18,6 +18,7 @@ class Angular {
 	const INTERCEPTOR_DIRECTORY = '/interceptors';
 	const CONFIG_DIRECTORY = '/config';
 	const PARTIALS_DIRECTORY = 'partials';
+	const ENV_PREFIX = 'ANGULAR_';
 
 	/**
 	 * The instance to the Filesystem class
@@ -102,6 +103,7 @@ class Angular {
 		$this->updateEntryFile();
 		$this->updatePartials();
 		$this->updateWebpack();
+		$this->updateEnvFile();
 	}
 
 	/**
@@ -333,6 +335,38 @@ class Angular {
 		$stub = static::replacePartialPath($stub, $this->getPartialPath('', true));
 		$stub = static::replaceScriptPath($stub, $this->getScriptPath('', true));
 		$this->filesystem->put(base_path('webpack.server.js'), $stub);
+	}
+
+	/**
+	 * Create an ENV file from the .env.example file, or create a new .env file
+	 * @return bool
+	 */
+	protected function createEnvFile(): bool {
+		$env_example_path = base_path('.env.example');
+		$env_path = base_path('.env.example');
+		if (file_exists($env_example_path)) {
+			return $this->filesystem->copy($env_example_path, $env_path);
+		}
+		return touch($env_path);
+	}
+
+	/**
+	 * Update the .env file with SCRIPT and PARTIAL path variables
+	 */
+	protected function updateEnvFile() {
+		// Check if the .env file exists
+		if (!file_exists(base_path('.env'))) {
+			// If it doesnot, copy it from .env.example file else create it
+			$this->createEnvFile();
+		}
+
+		$variables = PHP_EOL
+			. static::ENV_PREFIX . 'APP_NAME=' . $this->name
+			. PHP_EOL
+			. static::ENV_PREFIX . 'SCRIPT_PATH=' . $this->getScriptPath()
+			. PHP_EOL
+			. static::ENV_PREFIX . 'PARTIAL_PATH=' . $this->getPartialPath();
+		$this->filesystem->append('.env', $variables);
 	}
 
 	/**

@@ -4,6 +4,7 @@ import angular from 'angular';
  * @module DUMMYAPPNAME
  * @function appController
  * @kind controller
+ * @type function
  *
  * The app-controller is a sample controller that is attached to the app-component.
  * Every angular component has a few lifecycle functions, which are called at various
