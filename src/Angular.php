@@ -344,7 +344,6 @@ class Angular {
 	protected function createEnvFile(): bool {
 		$env_example_path = base_path('.env.example');
 		$env_path = base_path('.env');
-//		dd(file_exists($env_example_path));
 		if (file_exists($env_example_path)) {
 			return $this->filesystem->copy($env_example_path, $env_path);
 		}
