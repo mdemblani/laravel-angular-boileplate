@@ -83,8 +83,10 @@ class Angular {
 	 * @return string
 	 */
 	private function getPartialPath(string $path = '', bool $relative = false): string {
-		$path = $this->partial_path . $path . ($path ? DIRECTORY_SEPARATOR : '');
-		return !$relative ? resource_path(self::VIEW_DIRECTORY . DIRECTORY_SEPARATOR . $path) : $path;
+		$path = $this->partial_path . $path ;//. ($path ? DIRECTORY_SEPARATOR : '');
+		return !$relative ?
+			resource_path(self::VIEW_DIRECTORY . ($path ? DIRECTORY_SEPARATOR . $path : ''))
+			: $path;
 	}
 
 	/**
