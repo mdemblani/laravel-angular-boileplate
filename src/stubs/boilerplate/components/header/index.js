@@ -1,9 +1,9 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME.header
- * @kind module
+ * @module "DUMMYAPPNAME.header"
  *
+ * @description
  * The home module is a sample module, that is provided as a reference to get started with component
  * structure of the application.
  */
@@ -14,7 +14,7 @@ import headerComponent from './header-component';
  * The dependencies contain all the modules on which the angular module to be initalized depends
  * on.
  *
- * @type Array
+ * @type {string[]}
  */
 let dependencies = [
 ];

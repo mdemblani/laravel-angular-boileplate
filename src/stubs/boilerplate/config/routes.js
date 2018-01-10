@@ -1,9 +1,7 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME
- * @function routes
- *
+ * @fileOverview
  * In a Single Page Application, all the routes are controlled by the front-end framework
  * and in this case by AngularJS or one of the open-source libraries such as UI-Router.
  *

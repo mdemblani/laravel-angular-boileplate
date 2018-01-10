@@ -1,11 +1,11 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME.header
- * @function headerController
- * @kind controller
+ * @memberOf module:"DUMMYAPPNAME.header"
  * @name headerController
+ * @kind class
  *
+ * @description
  * The headerController is used by the headerComponent. You can use this component
  * to set-up various elements of header.
  */
@@ -14,7 +14,7 @@ function headerController() {
 
 	/**
 	 * The view-model variable. Anything bound to this variable is exposed to the view.
-	 * @type headerController
+	 * @type {headerController}
 	 */
 	let vm = this;
 	vm.name = null;

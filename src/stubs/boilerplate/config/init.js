@@ -1,9 +1,7 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME
- * @function init
- *
+ * @fileOverview
  * This is the main function from which kickstarts the entire angular application. This function is
  * defined as the run block for the main angular module. Keep this block as thin as possible.
  *

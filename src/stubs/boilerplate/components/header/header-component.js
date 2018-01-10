@@ -1,8 +1,9 @@
 /**
- * @module DUMMYAPPNAME.header
- * @kind component
+ * @memberOf module:"DUMMYAPPNAME.header"
  * @name homeComponent
+ * @kind function
  *
+ * @description
  * The header component renders the header in the layout.
  */
 

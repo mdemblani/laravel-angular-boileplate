@@ -86,7 +86,7 @@ import interceptors from './interceptors';
  * The dependencies contain all the modules on which the angular module to be initalized depends
  * on.
  *
- * @type Array
+ * @type {string[]}
  */
 let dependencies = [
 	uirouter,

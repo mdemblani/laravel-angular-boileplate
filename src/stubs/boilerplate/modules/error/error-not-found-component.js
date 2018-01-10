@@ -1,8 +1,9 @@
 /**
- * @module DUMMYAPPNAME.error
- * @kind component
+ * @module module:"DUMMYAPPNAME.error"
  * @name errorNotFoundComponent
+ * @kind function
  *
+ * @description
  * The error-not-found-component is a top-level component that is loaded on the error route.
  */
 

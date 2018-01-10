@@ -1,11 +1,11 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME.home
- * @function homeController
- * @kind controller
+ * @memberOf module:"DUMMYAPPNAME.home"
  * @name homeController
+ * @kind controller
  *
+ * @description
  * A sample controller, that is used by the homeComponent to retreive, set and transform data for
  * the home-components view. The homeController uses the homeService. 'ngInject' is used to
  * automatically manage dependency injection, therby avoiding the use of `controller.$inject`.
@@ -16,7 +16,7 @@ function homeController(homeService) {
 
 	/**
 	 * The view-model variable. Anything bound to this variable is exposed to the view.
-	 * @type appController
+	 * @type {homeController}
 	 */
 	let vm = this;
 

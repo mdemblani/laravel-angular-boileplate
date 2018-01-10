@@ -1,9 +1,10 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME.home
+ * @module "DUMMYAPPNAME.home"
  * @kind module
  *
+ * @description
  * The home module is a sample module, that is provided as a reference to get started with component
  * structure of the application
  */
@@ -15,7 +16,7 @@ import homeService from './home-service';
  * The dependencies contain all the modules on which the angular module to be initalized depends
  * on.
  *
- * @type Array
+ * @type {string[]}
  */
 let dependencies = [
 

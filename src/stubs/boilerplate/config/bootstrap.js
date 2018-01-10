@@ -1,21 +1,14 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME
- * @function bootstrap
- *
+ * @fileOverview
  * The bootstrap config block is used to set up application wide default configurations.
  * Use this block to set default configuration settings for various providers in your application.
  * For example, you can set up default headers used by the $http service using the $httpProvider.
+ *
+ * @global {boolean} __DEV_ENV__ is is passed by Webpack and depends on the build being done
  */
 
-/**
- * @global {boolean} __DEV_ENV__ is is passed by Webpack and depends on the build being done
- * @param {type} $compileProvider
- * @param {type} $httpProvider
- * @param {type} $locationProvider
- * @param {type} $traceProvider
- */
 function bootstrap($compileProvider, $httpProvider, $locationProvider, $traceProvider) {
 	'ngInject';
 
@@ -46,9 +39,7 @@ function bootstrap($compileProvider, $httpProvider, $locationProvider, $tracePro
 	/**
 	 * $http settings
 	 */
-	const accessToken = Store.get('authorizationToken');
 	$httpProvider.defaults.cache = false;
-	$httpProvider.defaults.headers.common['Authorization'] = `Bearer ${accessToken}`;
 	$httpProvider.defaults.headers.common['Content-Type'] = 'application/json;charset=utf-8';
 	$httpProvider.defaults.headers.common['Accept'] = 'application/json';
 	$httpProvider.useApplyAsync(true);

@@ -1,8 +1,9 @@
 /**
- * @module DUMMYAPPNAME.interceptors
+ * @memberOf module:"DUMMYAPPNAME.interceptors"
  * @function interceptor
  * @kind function
  *
+ * @description
  * The interceptors are service factories that are registered with the $httpProvider by adding
  * them to the $httpProvider.interceptors array. The factory is called and injected with dependencies
  * (if specified) and returns the interceptor.
@@ -24,7 +25,7 @@ import authorizationInterceptor from './authorization-interceptor';
 /**
  * The interceptors contain all the interceptors which are to be added to the $httpProvider.
  *
- * @type Array
+ * @type {Function[]}
  */
 let interceptors = [
 	authorizationInterceptor,

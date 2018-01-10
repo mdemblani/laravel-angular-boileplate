@@ -1,25 +1,27 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME.components
+ * @module "DUMMYAPPNAME.components"
  *
+ * @description
  * All the projects external dependencies that act as re-usable components/directives in the project
  * will be imported over here. This helps in providing an overview of all the external
  * components/directives which are re-usable in nature.
  *
  * The following components can be imported over here
  * 1. Node Module Component: These are components that are provided by 3rd party sources such as
- *							 open source libraries and are present in the node_modules directory.
- *							 They can be imported as  `import module from module-name`
+ *	  open source libraries and are present in the node_modules directory.
+ *		`import module from module-name`
  * 2. Vendor Components: Any 3rd party/open-source library that doesnot proivde a npm way to
- *						 install would be present this Those present in the vendor folder
- *						 inside the main angular application as `import module from 'vendors/module-name';
+ *	  install would be present this Those present in the vendor folder
+ *	  inside the main angular application.
+ *		`import module from 'vendors/module-name';
  * 3. Application Components: These are the application specific components. Each application component
- *							  would have a seperate folder and an index.js which would be imported
- *							  by default.
+ *	  would have a seperate folder and an index.js which would be imported by default.
  *
  * The import searches files relative to 2 top level directories: node_modules and the resources/scripts directory
  * or a relative path with respect to the current directory can be provided
+ *
  * @example import module from components/module
  */
 
@@ -36,7 +38,7 @@ import header from './header';
  * The dependencies contain all the modules on which the angular module to be initalized depends
  * on.
  *
- * @type Array
+ * @type {string[]}
  */
 let dependencies = [
 	dropdown,

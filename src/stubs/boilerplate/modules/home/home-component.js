@@ -1,8 +1,9 @@
 /**
- * @module DUMMYAPPNAME.home
- * @kind component
+ * @memberOf module:"DUMMYAPPNAME.home"
  * @name homeComponent
+ * @kind function
  *
+ * @description
  * A sample top-level route component that would be loaded when the /home route is loaded.
  */
 

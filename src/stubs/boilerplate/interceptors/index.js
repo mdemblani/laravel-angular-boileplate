@@ -1,9 +1,10 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME.interceptors
+ * @module "DUMMYAPPNAME.interceptors"
  * @kind module
  *
+ * @description
  * Interceptors act as middleware/pipeline for your AngularJS application. This middleware/pipeline is
  * used by AngularJS $http service, to perform various actions on the request/response
  * when sending and receiving a data to/from api.
@@ -24,7 +25,7 @@ import interceptor from './interceptor';
  * The dependencies contain all the modules on which the angular module to be initalized depends
  * on.
  *
- * @type Array
+ * @type {string[]}
  */
 let dependencies = [
 

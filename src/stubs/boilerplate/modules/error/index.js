@@ -1,9 +1,10 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME.error
+ * @module "DUMMYAPPNAME.error"
  * @kind module
  *
+ * @description
  * The error module contains all the error-components, i.e. components loaded on various
  * error pages. One such component provided is the notFound component which is loaded when the
  * 404 route is loaded by the Angular application.
@@ -15,7 +16,7 @@ import errorNotFoundComponent from './error-not-found-component';
  * The dependencies contain all the modules on which the angular module to be initalized depends
  * on.
  *
- * @type Array
+ * @type {string[]}
  */
 let dependencies = [
 
