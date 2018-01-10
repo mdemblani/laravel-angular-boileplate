@@ -2,7 +2,7 @@ import angular from 'angular';
 
 /**
  * @memberOf module:"DUMMYMODULENAME"
- * @name DUMMYCONTROLLER
+ * @name DUMMYCLASS
  * @kind class
  *
  * @description
@@ -10,12 +10,12 @@ import angular from 'angular';
  *
  */
 
-function DUMMYCONTROLLER() {
+function DUMMYCLASS() {
 	'ngInject';
 
 	/**
 	 * The view-model variable. Anything bound to this variable is exposed to the view.
-	 * @type {DUMMYCONTROLLER}
+	 * @type {DUMMYCLASS}
 	 */
 	let vm = this;
 
@@ -36,4 +36,4 @@ function DUMMYCONTROLLER() {
 	}
 }
 
-export default DUMMYCONTROLLER;
+export default DUMMYCLASS;
