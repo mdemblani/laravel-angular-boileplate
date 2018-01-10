@@ -109,13 +109,13 @@ class ControllerMakeCommand extends Command {
 	}
 
 	/**
-	 * Replace the DUMMYCONTROLLERDESCRIPTION string in the stub provided with the description of the controller
+	 * Replace the DUMMYDESCRIPTION string in the stub provided with the description of the controller
 	 * @param string $stub
 	 * @param string $name
 	 * @return string
 	 */
 	protected function replaceControllerDescription(&$stub, $name) {
-		$stub = str_replace(['DUMMYCONTROLLERDESCRIPTION'], [$name], $stub);
+		$stub = str_replace(['DUMMYDESCRIPTION'], [$name], $stub);
 		return $stub;
 	}
 

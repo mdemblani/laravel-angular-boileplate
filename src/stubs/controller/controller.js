@@ -6,7 +6,7 @@ import angular from 'angular';
  * @kind class
  *
  * @description
- * DUMMYCONTROLLERDESCRIPTION
+ * DUMMYDESCRIPTION
  *
  */
 
