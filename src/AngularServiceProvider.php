@@ -3,6 +3,8 @@
 namespace Angular\Providers;
 
 use Angular\Commands\GenerateCommand;
+use Angular\Commands\ControllerMakeCommand;
+
 use Illuminate\Support\ServiceProvider;
 
 class AngularServiceProvider extends ServiceProvider {
@@ -14,6 +16,7 @@ class AngularServiceProvider extends ServiceProvider {
 	 */
 	public function boot() {
 		$this->commands('angular.generate');
+		$this->commands('angular.controller');
 	}
 
 	/**
@@ -31,6 +34,9 @@ class AngularServiceProvider extends ServiceProvider {
 	protected function registerAngularCommand() {
 		$this->app->singleton('angular.generate', function () {
 			return new GenerateCommand();
+		});
+		$this->app->singleton('angular.controller', function () {
+			return new ControllerMakeCommand(new \Illuminate\Filesystem\Filesystem);
 		});
 	}
 
