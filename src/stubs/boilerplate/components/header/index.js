@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 /**
- * @module "DUMMYAPPNAME.header"
+ * @module "DUMMYMODULENAME.header"
  *
  * @description
  * The home module is a sample module, that is provided as a reference to get started with component
@@ -23,6 +23,6 @@ let dependencies = [
  * The name of the module is exported, since Angular depends on the name of the module while resolving
  * module dependenies.
  */
-export default angular.module('DUMMYAPPNAME.header', dependencies)
+export default angular.module('DUMMYMODULENAME.header', dependencies)
 		.component('appHeader', headerComponent)
 		.name;

@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME.modules
+ * @module DUMMYMODULENAME.modules
  *
  * A component/block is considered a module, if it satisifes any of the following
  * 1. It is a top-level component.
@@ -55,5 +55,5 @@ let dependencies = [
  * module dependenies.
  */
 export default angular
-		.module('DUMMYAPPNAME.modules', dependencies)
+		.module('DUMMYMODULENAME.modules', dependencies)
 		.name;

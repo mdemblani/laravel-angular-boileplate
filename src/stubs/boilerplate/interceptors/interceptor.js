@@ -1,6 +1,6 @@
 /**
- * @memberOf module:"DUMMYAPPNAME.interceptors"
- * @function interceptor
+ * @memberOf module:"DUMMYMODULENAME.interceptors"
+ * @name interceptor
  * @kind function
  *
  * @description
@@ -9,7 +9,7 @@
  * (if specified) and returns the interceptor.
  *
  * All the interceptors created, are imported over here and added to the $httpProvider.interceptors
- * which is then exported as a config block to the DUMMYAPPNAME.interceptors module.
+ * which is then exported as a config block to the DUMMYMODULENAME.interceptors module.
  *
  * A default interceptor by the name authorization-interceptor is already provided before hand, which
  * checks if the API(XHR/Ajax) request has returned a 401 UnAuthorized request or not.

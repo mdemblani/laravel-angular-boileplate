@@ -1,5 +1,5 @@
 /**
- * @memberOf module:"DUMMYAPPNAME.home"
+ * @memberOf module:"DUMMYMODULENAME.home"
  * @name homeComponent
  * @kind function
  *

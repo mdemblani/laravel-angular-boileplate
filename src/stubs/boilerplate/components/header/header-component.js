@@ -1,6 +1,6 @@
 /**
- * @memberOf module:"DUMMYAPPNAME.header"
- * @name homeComponent
+ * @memberOf module:"DUMMYMODULENAME.header"
+ * @name headerComponent
  * @kind function
  *
  * @description

@@ -378,7 +378,7 @@ class Angular {
 	 * @return type
 	 */
 	protected function replaceAppName(&$stub, $name) {
-		$stub = str_replace(['DUMMYAPPNAME'], [$name], $stub);
+		$stub = str_replace(['DUMMYMODULENAME'], [$name], $stub);
 		return $stub;
 	}
 

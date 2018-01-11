@@ -1,5 +1,6 @@
 /**
- * @memberOf module:"DUMMYAPPNAME"
+ * @memberOf module:"DUMMYMODULENAME"
+ * @name appComponent
  * @kind function
  *
  * @description

@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 /**
- * @module "DUMMYAPPNAME.components"
+ * @module "DUMMYMODULENAME.components"
  *
  * @description
  * All the projects external dependencies that act as re-usable components/directives in the project
@@ -52,5 +52,5 @@ let dependencies = [
  * module dependenies.
  */
 export default angular
-		.module('DUMMYAPPNAME.components', dependencies)
+		.module('DUMMYMODULENAME.components', dependencies)
 		.name;

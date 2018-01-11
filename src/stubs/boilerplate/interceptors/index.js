@@ -1,8 +1,7 @@
 import angular from 'angular';
 
 /**
- * @module "DUMMYAPPNAME.interceptors"
- * @kind module
+ * @module "DUMMYMODULENAME.interceptors"
  *
  * @description
  * Interceptors act as middleware/pipeline for your AngularJS application. This middleware/pipeline is
@@ -36,6 +35,6 @@ let dependencies = [
  * module dependenies.
  */
 export default angular
-		.module('DUMMYAPPNAME.interceptors', dependencies)
+		.module('DUMMYMODULENAME.interceptors', dependencies)
 		.config(interceptor)
 		.name;

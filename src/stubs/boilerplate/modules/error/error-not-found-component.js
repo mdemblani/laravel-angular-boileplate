@@ -1,5 +1,5 @@
 /**
- * @module module:"DUMMYAPPNAME.error"
+ * @module module:"DUMMYMODULENAME.error"
  * @name errorNotFoundComponent
  * @kind function
  *

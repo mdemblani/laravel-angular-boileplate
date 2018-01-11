@@ -139,12 +139,12 @@ abstract class MakeCommand extends Command {
 	 * @param string $name
 	 * @return string
 	 */
-	private function normalize($name): string {
+	protected function normalize($name): string {
 		return Str::camel($name);
 	}
 
 	/**
-	 * Build the angular controller
+	 * Build the angular entity
 	 * @param string $path
 	 * @return string
 	 */

@@ -1,8 +1,7 @@
 import angular from 'angular';
 
 /**
- * @module "DUMMYAPPNAME.home"
- * @kind module
+ * @module "DUMMYMODULENAME.home"
  *
  * @description
  * The home module is a sample module, that is provided as a reference to get started with component
@@ -26,7 +25,7 @@ let dependencies = [
  * The name of the module is exported, since Angular depends on the name of the module while resolving
  * module dependenies.
  */
-export default angular.module('DUMMYAPPNAME.home', dependencies)
+export default angular.module('DUMMYMODULENAME.home', dependencies)
 		.component('home', homeComponent)
 		.component('homeService', homeService)
 		.name;

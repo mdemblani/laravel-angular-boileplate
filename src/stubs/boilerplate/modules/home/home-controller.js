@@ -1,9 +1,9 @@
 import angular from 'angular';
 
 /**
- * @memberOf module:"DUMMYAPPNAME.home"
+ * @memberOf module:"DUMMYMODULENAME.home"
  * @name homeController
- * @kind controller
+ * @kind class
  *
  * @description
  * A sample controller, that is used by the homeComponent to retreive, set and transform data for

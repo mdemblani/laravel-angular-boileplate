@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 /**
- * @memberOf module:"DUMMYAPPNAME.header"
+ * @memberOf module:"DUMMYMODULENAME.header"
  * @name headerController
  * @kind class
  *

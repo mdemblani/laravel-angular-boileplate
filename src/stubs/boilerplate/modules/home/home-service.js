@@ -1,7 +1,7 @@
 import angular from 'angular';
 
 /**
- * @memberOf module:"DUMMYAPPNAME.home"
+ * @memberOf module:"DUMMYMODULENAME.home"
  * @name homeService
  * @kind class
  *

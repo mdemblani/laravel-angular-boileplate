@@ -1,10 +1,9 @@
 import angular from 'angular';
 
 /**
- * @module DUMMYAPPNAME
- * @function appController
- * @kind controller
- * @type function
+ * @module DUMMYMODULENAME
+ * @name appController
+ * @kind class
  *
  * @description
  * The app-controller is a sample controller that is attached to the app-component.

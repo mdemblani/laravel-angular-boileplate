@@ -1,5 +1,5 @@
 /**
- * @module DUMMYAPPNAME
+ * @module DUMMYMODULENAME
  * @kind module
  *
  * This is the main entry point into the application. The entire angular application begins
@@ -101,7 +101,7 @@ let dependencies = [
  * Now, initialize the basic angular application by creating a basic angular module
  */
 
-let app = angular.module('DUMMYAPPNAME', dependencies);
+let app = angular.module('DUMMYMODULENAME', dependencies);
 app.config(bootstrap).config(routes);
 app.constant('appConstants', constants);
 app.run(init);
@@ -109,5 +109,5 @@ app.component('app', appComponent);
 
 // Bootstrap angular on body element when document is ready
 angular.element(document).ready(function () {
-	angular.bootstrap(document.body, ['DUMMYAPPNAME']);
+	angular.bootstrap(document.body, ['DUMMYMODULENAME']);
 });

@@ -1,6 +1,6 @@
 /**
- * @memberOf module:"DUMMYAPPNAME.interceptors"
- * @function authorizationInterceptor
+ * @memberOf module:"DUMMYMODULENAME.interceptors"
+ * @name authorizationInterceptor
  * @kind function
  *
  * @description
